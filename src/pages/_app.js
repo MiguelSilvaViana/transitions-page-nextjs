@@ -7,6 +7,8 @@ import { AnimatePresence } from 'framer-motion';
 /* transitions components */
 import Stairs from '@/components/Layout/Stairs';
 import Wave from '@/components/Layout/Wave';
+import Inner from '@/components/Layout/Inner';
+import Curve from '@/components/Layout/Curve';
 
 
 export default function App({ Component, pageProps, router }) {
@@ -20,7 +22,8 @@ export default function App({ Component, pageProps, router }) {
 
       <AnimatePresence mode='wait'>
         {/* <Wave /> */}
-        <Stairs />
+        {/* <Stairs /> */}
+        <Curve />
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </div>
